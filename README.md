@@ -34,3 +34,11 @@ By default, xelatex-emoji expects the images to be in `images/utf8code.png`. You
 ```tex
 \newcommand{\xelatexemojipath}[1]{mycustompath/{#1}.pdf}
 ```
+
+## Development
+
+To generate the flag codes:
+
+```
+ruby bin/generate_flags.rb > xelatexemoji-flags.sty
+```
