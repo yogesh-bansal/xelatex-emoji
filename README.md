@@ -11,8 +11,8 @@ Use the `xelatexemoji` package. Enjoy :)
 ```tex
 \documentclass{article}
 
-\usepackage{xelatexemoji}
 \usepackage{xltxtra}
+\usepackage{xelatexemoji}
 
 \setmainfont{Ubuntu}
 
