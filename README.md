@@ -2,7 +2,7 @@
 Emoji support for XeLaTeX documents
 
 ## Installation
-Clone this repo into your `texmf` folder or to the project folder. Clone emoji images named after the utf8 code - I recommend [EmojiOne](https://github.com/Ranks/emojione).
+Clone this repo into your [`texmf` folder](https://en.wikibooks.org/wiki/LaTeX/Installing_Extra_Packages) or to the project folder. Clone emoji images named after the utf8 code - I recommend [EmojiOne](https://github.com/Ranks/emojione).
 
 ## Usage
 Use the `xelatexemoji` package. Enjoy :)
