@@ -4,13 +4,11 @@
 \providecommand{\xelatexemojipath}[1]{images/{#1}.png}
 
 \newcommand{\xelatexemoji}[1]{
-  \text{
     \hspace{-1em}
     \raisebox{-0.15em}{
       \includegraphics[height=1em]{\xelatexemojipath{#1}}
     }
     \hspace{-1em}
-  }
 }
 
 \newunicodechar{😁}{\xelatexemoji{1f601}}
