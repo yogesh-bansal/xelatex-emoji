@@ -4,6 +4,24 @@ Emoji support for XeLaTeX documents
 ## Installation
 Clone this repo into your [`texmf` folder](https://en.wikibooks.org/wiki/LaTeX/Installing_Extra_Packages) or to the project folder. Clone emoji images named after the utf8 code - I recommend [EmojiOne](https://github.com/Ranks/emojione).
 
+Note: Tex doesn't natively support SVG, so if you download the vector emojis, you can convert them to PDFs with the following command on Mac and Linux: (assumes you have installed the librsvg2-bin package in Linux
+
+```bash
+# For Mac OS X:
+$ brew install librsvg
+
+# For Linux:
+$ sudo apt-get install librsvg2-bin
+
+# Then, run:
+$ rsvg-convert -f pdf -o <emoji-UTF-code>.pdf <emoji-UTF-code>.svg
+```
+
+If you don't want to hand convert massive emoji SVGs, run the ```svgs-to-pdfs``` command (included this repo) in the folder where the SVGs are:
+```bash
+./svgs-to-pdfs ./*.svg
+```
+
 ## Usage
 Use the `xelatexemoji` package. Enjoy :)
 
@@ -32,7 +50,7 @@ yields (using the great [EmojiOne](https://github.com/Ranks/emojione) images)
 By default, xelatex-emoji expects the images to be in `images/utf8code.png`. You can change the path and extension by creating your own `\xelatexemojipath` command.
 
 ```tex
-\newcommand{\xelatexemojipath}[1]{mycustompath/{#1}.pdf}
+\newcommand{\xelatexemojipath}[1]{mycustompath/#1.pdf}
 ```
 
 ## Development
