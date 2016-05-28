@@ -50,7 +50,7 @@ yields (using the great [EmojiOne](https://github.com/Ranks/emojione) images)
 By default, xelatex-emoji expects the images to be in `images/utf8code.png`. You can change the path and extension by creating your own `\xelatexemojipath` command.
 
 ```tex
-\newcommand{\xelatexemojipath}[1]{mycustompath/{#1}.pdf}
+\newcommand{\xelatexemojipath}[1]{mycustompath/#1.pdf}
 ```
 
 ## Development
