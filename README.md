@@ -17,9 +17,9 @@ $ sudo apt-get install librsvg2-bin
 $ rsvg-convert -f pdf -o <emoji-UTF-code>.pdf <emoji-UTF-code>.svg
 ```
 
-If you don't want to hand convert massive emoji SVGs, run the ```svgs-to-pdfs``` command (included this repo) in the folder where the SVGs are:
+If you don't want to hand convert massive emoji SVGs, run the ```bin/convert_svgs_to_pdfs``` command (included this repo) in the folder where the SVGs are:
 ```bash
-./svgs-to-pdfs ./*.svg
+bin/convert_svgs_to_pdfs ./*.svg
 ```
 
 ## Usage
