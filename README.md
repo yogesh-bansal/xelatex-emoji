@@ -49,7 +49,7 @@ yields (using the great [EmojiOne](https://github.com/Ranks/emojione) images)
 
 By default, xelatex-emoji expects the images to be in `images/utf8code.extension`. The package supports the same image formats (extensions) as XeLaTeX.
 
-For example: If you insert the emoji 💩 (code `1F4A9`) in your document, then the translation will work if the file `images/1F4A9.pdf` or `images/1F4A9.png` exist. If both exist, then XeLaTeX will use the “better” version `images/1F4A9.pdf`.
+For example: If you insert the emoji 👌 (code `1F44C`) in your document, then the translation will work if the file `images/1F44C.pdf` or `images/1F44C.png` exist. If both exist, then XeLaTeX will use the “better” version `images/1F44C.pdf`.
 
 You can change the emoji image path and extension by creating your own `\xelatexemojipath` command.
 
